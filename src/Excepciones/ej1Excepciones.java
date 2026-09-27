@@ -1,9 +1,13 @@
 package Excepciones;
 
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-import java.awt.*;
+import javax.swing.*;
 
 public class ej1Excepciones extends JFrame {
     // Paneles
@@ -91,9 +95,9 @@ public class ej1Excepciones extends JFrame {
             }catch(NumberFormatException ex){
                 JOptionPane.showMessageDialog(
                     this,
-                     "Introduce solo valores numericos",
-                     "Error de datos",
-                     JOptionPane.ERROR_MESSAGE
+                    "Introduce solo valores numericos",
+                    "Error de datos",
+                    JOptionPane.ERROR_MESSAGE
                 );
             //Aqui se hara referencia a las excepciones marcadas en el filtro de intervalos
             }catch(ExcepcionIntervalo ex){
