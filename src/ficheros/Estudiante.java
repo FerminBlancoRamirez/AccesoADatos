@@ -12,6 +12,16 @@ public class Estudiante implements Serializable{
     public Estudiante(String nombre, int edad, double notaMedia, String contraseña){
         this.nombre=nombre;
         this.edad=edad;
+        this.notaMedia=notaMedia;
+        this.contraseña=contraseña;
     }
+
+    @Override
+    public String toString() {
+        return "Estudiante [nombre=" + nombre + ", edad=" + edad + ", notaMedia=" + notaMedia + ", contraseña="
+                + contraseña + "]";
+    }
+
+    
 
 }
